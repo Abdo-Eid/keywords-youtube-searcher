@@ -3,7 +3,7 @@ import webbrowser #importing webbrowser module for openning braweser
 #making the url and open it in browser
 def TabGenerator(keyword):
     url = "https://www.youtube.com/results?search_query=" + keyword
-    webbrowser.open_new_tab(url)
+    webbrowser.open(url,new=1)#new = 1 for open in new window if not opened
 
 #getting every keyword in keywords txt and open it
 def LoopingKeyword():
